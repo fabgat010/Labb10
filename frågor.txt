@@ -1,0 +1,20 @@
+-Rita hur syntaxträdet byggs upp av funktionsanropen.
+
+Kolla träd.png
+
+-Visa med ett exempel hur funktionen weight() beräknar molekylvikten.
+
+Skickar Ruta objektet till def weight(ruta) . 
+Kollar ifall Ruta (dvs. den första rutan e tom). 
+Ifall den är tom så retunerar vi 0 . Annars går vi vidare till "else:" satsen. Där kollar vi först
+ifall rutans "down" pekare är noll.
+ Ifall den är det så rutans nummer (dvs. hur många atomer det var) gånger vikten, vilket vi får från 
+hashtabellen. Sedan adderar vi det med "total vikt" (som börjar på 0). I total vikt så gör vi så 
+att vi tar talet vi fick från "if / else" satsen och sedan adderar det med talet vi får från att köra funktionen
+igen med rutans nextpekare. Ifall nextpekaren är tom så blir det samma tal annars så sker samma process igen tills dess att
+nextpekaren är "None".
+
+-Förklara hur ditt anrop till molgrafikens show() fungerar
+(men du behöver inte kunna förklara hur Tkinter fungerar).
+
+
